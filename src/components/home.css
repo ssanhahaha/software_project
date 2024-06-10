@@ -1,0 +1,129 @@
+.body { 
+    font-family: Arial, sans-serif; 
+    background-color: #b3d9ff; 
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding: 20px;
+}
+.container {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+}
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+h1, h2 {
+    color: #2c3e50; 
+    text-align: center;
+}
+form { 
+    margin-bottom: 20px; 
+}
+.form-group {
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+}
+label {
+    width: 30%; 
+    text-align: right; 
+    font-size: 16px;
+    margin-right: 20px;
+}
+input[type="text"], input[type="file"] { 
+    width: 45%;
+    padding: 5px; 
+    font-size: 16px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+input[type="submit"],button {
+    /* width: 20%; */
+    padding: 5px; 
+    justify-content: center;
+    background-color: #2c3e50; 
+    color: white; 
+    border-radius: 5px;
+}
+input[type="submit"]:hover ,button:hover{
+    background-color: #1a242f;
+}
+.a {
+    text-align: center; 
+}
+.a button {
+    width: 30%;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.photo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+
+.photo {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo img { 
+    max-width: 90%; 
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.photo p {
+    margin: 5px 0;
+}
+.photo a {
+    display: block;
+    margin-top: 5px;
+    color: #3498db;
+    text-decoration: none;
+}
+.photo a:hover {
+    text-decoration: underline;
+}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+th, td { 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    text-align: center; 
+    border-radius: 5px;
+}
+th {
+    background-color: #f2f2f2;
+}
+.message-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.message-buttons a {
+    margin-left: 10px;
+    color: #3498db;
+    text-decoration: none;
+}

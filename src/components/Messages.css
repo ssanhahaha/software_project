@@ -1,0 +1,65 @@
+.messages body {
+    font-family: Arial, sans-serif;
+    background-color: #b3d9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    margin: 0;
+}
+
+.messages .container {
+    background: #fff;
+    padding: 20px 100px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.messages h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.messages a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.messages li {
+    background: #e8f0fe;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px; 
+}
+
+.messages p {
+    margin: 5px 0;
+}
+
+.messages .btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.messages .btn-reply {
+    width: 40%;
+    background-color: #2c3e50;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+.messages .btn-delete {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #3498db;
+}

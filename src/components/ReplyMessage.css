@@ -1,0 +1,188 @@
+.replys body {
+    font-family: Arial, sans-serif;
+    background-color: #b3d9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    margin: 0;
+  }
+  
+  .replys .container {
+    background: #fff;
+    padding: 20px 100px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .replys h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .replys a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .replys ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .replys li {
+    background: #e8f0fe;
+    padding: 10px;
+  }
+  
+  .replys p {
+    margin: 5px 0;
+  }
+  
+  .replys .btn-group {
+    display: flex;
+    justify-content: space-between; /* 좌우 끝으로 배치 */
+    margin-top: 20px;
+  }
+  
+  .replys .btn-reply {
+    width : 40%;
+    background-color: #2c3e50;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    writing-mode: horizontal-tb; /* 가로 쓰기 모드 */
+    text-align: center;
+  }
+  
+  .replys .btn-delete {
+    width : 40%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    color: #3498db;
+    cursor: pointer;
+    writing-mode: horizontal-tb; /* 가로 쓰기 모드 */
+    text-align: center;
+  }
+  
+  .replys .original-message {
+    background: #e8f0fe;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .replys label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .replys textarea {
+    
+    padding: 20px 120px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  
+/* .replys body {
+    font-family: Arial, sans-serif;
+    background-color: #b3d9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    margin: 0;
+}
+
+.replys .container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 150%;
+    max-width: 600px;
+}
+
+.replys h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.replys a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.replys ul {
+    list-style: none;
+    padding: 0;
+}
+
+.replys li {
+    background: #e8f0fe;
+    padding: 10px;
+}
+
+.replys p {
+    margin: 5px 0;
+}
+
+.replys .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.replys .btn-reply {
+    background-color: #2c3e50;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.replys .btn-delete {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.replys .original-message {
+    background: #e8f0fe;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.replys label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.replys textarea {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+} */
