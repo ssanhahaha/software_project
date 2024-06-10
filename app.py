@@ -32,18 +32,6 @@ def get_user_id_from_session():
     return user['id'] if user else None
 
 @app.route('/api/register', methods=['POST'])
-# def register():
-#     data = request.get_json()
-#     username = data['username']
-#     password = data['password']
-#     hashed_password = generate_password_hash(password)
-
-#     db = get_db()
-#     cursor = db.cursor()
-#     cursor.execute('INSERT INTO users (username, password) VALUES (?, ?)', (username, hashed_password))
-#     db.commit()
-    
-#     return jsonify({'message': 'User registered successfully'})
 def register():
     data = request.get_json()
     username = data['username']
@@ -103,18 +91,6 @@ def home():
 
     return jsonify({'username': username, 'users': users_list, 'photos': photos_list})
 
-# @app.route('/api/messages', methods=['GET'])
-# def messages():
-#     if 'username' not in session:
-#         return jsonify({'error': 'Unauthorized'}), 401
-
-#     db = get_db()
-#     cursor = db.cursor()
-#     cursor.execute('SELECT * FROM messages WHERE recipient = ?', (session['username'],))
-#     messages = cursor.fetchall()
-#     messages_list = [{'id': msg['id'], 'sender': msg['sender'], 'content': msg['content'], 'timestamp': msg['timestamp']} for msg in messages]
-    
-#     return jsonify(messages_list)
 
 @app.route('/api/messages', methods=['POST'])
 def send_message():
@@ -131,7 +107,7 @@ def send_message():
     db = get_db()
     cursor = db.cursor()
     cursor.execute('SELECT username FROM users WHERE username = ?', (receiver_id,))
-    # id-> username으로 바꿔주세요
+    
     receiver = cursor.fetchone()
 
     if not receiver:
@@ -182,7 +158,7 @@ def reply_message():
     db = get_db()
     cursor = db.cursor()
     cursor.execute('SELECT username FROM users WHERE username = ?', (original_message_id,))
-    # id-> username
+    
     receiver = cursor.fetchone()
 
     if not receiver:
@@ -193,32 +169,6 @@ def reply_message():
     db.commit()
     
     return jsonify({'message': 'Message sent successfully'}), 200
-# def reply_message():
-#     if 'username' not in session:
-#         return jsonify({'error': 'Unauthorized'}), 401
-
-#     data = request.get_json()
-#     original_message_id = data.get('messageId')
-#     reply_content = data.get('content')
-
-#     if not original_message_id or not reply_content:
-#         return jsonify({'error': 'Missing data'}), 400
-
-#     db = get_db()
-#     cursor = db.cursor()
-#     cursor.execute('SELECT recipient FROM messages WHERE id = ?', (original_message_id,))
-#     original_message = cursor.fetchone()
-
-#     if not original_message:
-#         return jsonify({'error': 'Original message not found'}), 404
-
-#     # 여기서 reply message를 추가합니다.
-#     cursor.execute('INSERT INTO messages (sender, recipient, content) VALUES (?, ?, ?)',
-#                    (session['username'], original_message['recipient'], reply_content))
-#     db.commit()
-
-#     return jsonify({'message': 'Reply sent successfully'}), 200
-
 
 @app.route('/api/check_login', methods=['GET'])
 def check_login():
