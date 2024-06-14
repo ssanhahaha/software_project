@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './Search.css';
-const Search = () => {
+const Search1 = () => {
   const [photos, setPhotos] = useState([]);
   const location = useLocation();
   const query = new URLSearchParams(location.search);
@@ -48,7 +48,7 @@ const Search = () => {
           </div>
         ))}
       </div>
-      <Link to="/home">홈으로</Link>
+      <Link to="/home1">홈으로</Link>
       
     </div>
     
@@ -56,6 +56,6 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default Search1;
 
 

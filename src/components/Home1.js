@@ -34,7 +34,7 @@ const Home1 = () => {
   }, []);
 
   const handleKeywordChange = (e) => setKeyword(e.target.value);
-  const handleSearch = () => navigate(`/search?keyword=${keyword}`);
+  const handleSearch = () => navigate(`/search1?keyword=${keyword}`);
 
   return (
     <body className="home1">
